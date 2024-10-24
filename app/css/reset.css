@@ -5,6 +5,8 @@
 
 /* div{border: 1px solid black;} */
 
+
+/* main */
 .mainCampoMinado {
   width: 328px;
   height: 412px;
@@ -12,45 +14,67 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: grey;
+  background: rgb(189, 189, 189);
   display: grid;
   grid-template-rows: 20% 1fr;
 }
 
+/* grid 01 */
 .scoreBoardSystem {
-  background-color: grey;
-  display: grid;
-  grid-template-columns: 72px 1fr 1fr;
-  margin-left: 40px;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 72px 1fr 72px;
+    border: 5px inset grey;
+    margin: 10px;
+    padding: 20px;
+    align-content: center;
+    justify-items: center;
 }
-
+/* todos DIV */
 .insideCapsulaFromScore {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.bombsCheck {
-  background: grey;
-}
-.clockCheck {
-  background: grey;
-}
-
 .scoreBoardSystem img {
-  width: 23.66px;
+    width: 23.66px;
 }
+/* TOTAL DE BOMBAS */
+.bombsCheck { background: transparent; }
+/* CARINHA RESET  */
+.carinha img { width: 47.31px; }
+/* RELOGIO CLOCK */
+.clockCheck {background: transparent;}
 
-.carinha img {
-  width: 47.31px;
-}
 
+
+
+/* grid 02 */
 .realGamePass {
-  background: rgb(189, 189, 189);
-  padding: 4px;
-  border: 6px solid rgb(151, 151, 151);
-  margin: 4px;
+    background: rgb(189, 189, 189);
+    padding: 4px;
+    border: 5px inset rgb(151, 151, 151);
+    margin: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
 }
+.findTheRightSquare{width: 29.11px;}
+
+.findTheRightSquare:hover, .carinha img:hover{cursor: pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .test {
   width: 50px;
