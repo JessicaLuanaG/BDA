@@ -80,4 +80,8 @@ $(document).ready(() => {
       $(this).data("revealed", true); // Atualiza o estado para "revelado"
     }
   });
+
+  $(document).on("click", ".carinha", function () {
+    location.reload(); // Recarrega a página
+  });
 });
