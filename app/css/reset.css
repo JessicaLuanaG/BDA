@@ -2,7 +2,13 @@
   margin: 0;
   padding: 0;
 }
-
+img {
+  user-select: none; /* Impede seleção de imagem ou texto ao redor */
+  -webkit-user-drag: none; /* Desabilita arrastar no WebKit (Chrome, Safari) */
+  -moz-user-select: none; /* Impede seleção no Firefox */
+  -ms-user-select: none; /* Impede seleção no IE/Edge */
+  pointer-events: auto; /* Mantém interações como cliques (se necessário) */
+}
 /* div{border: 1px solid black;} */
 
 

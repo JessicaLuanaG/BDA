@@ -51,7 +51,7 @@ $(document).ready(function () {
     for (let j = 0; j < cols; j++){
       let imgSrc = defaultImage
       // criar os quadrados 
-      $("#euamojessica").append(`<img id='squareFind' class='findTheRightSquare' src='${imgSrc}' alt='quadrados'>`);
+      $("#euamojessica").append(`<img id='squareFind' draggable="false" class='findTheRightSquare' src='${imgSrc}' alt='quadrados'>`);
     }
   }
 
