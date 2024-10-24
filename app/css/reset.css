@@ -1,1 +1,6 @@
 *{margin: 0; padding: 0;}
+
+
+
+
+.mainCampoMinado{ width: 30%;height: 50vh;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
