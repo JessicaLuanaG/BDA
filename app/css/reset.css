@@ -1,24 +1,59 @@
-*{margin: 0; padding: 0;}
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /* div{border: 1px solid black;} */
 
+.mainCampoMinado {
+  width: 328px;
+  height: 412px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: grey;
+  display: grid;
+  grid-template-rows: 20% 1fr;
+}
 
-.mainCampoMinado{ width: 328px;height: 412px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%)
-    ;background: grey;display: grid;grid-template-rows: 20% 1fr;}
+.scoreBoardSystem {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 72px 1fr 1fr;
+  margin-left: 40px;
+}
 
-.scoreBoardSystem{background-color: grey;display: grid;grid-template-columns: 72px 1fr 1fr;margin-left: 40px;}
+.insideCapsulaFromScore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.insideCapsulaFromScore{display: flex;align-items: center;justify-content: center;}
+.bombsCheck {
+  background: grey;
+}
+.clockCheck {
+  background: grey;
+}
 
+.scoreBoardSystem img {
+  width: 23.66px;
+}
 
-.bombsCheck{background: grey;}
-.clockCheck{background: grey;}
+.carinha img {
+  width: 47.31px;
+}
 
+.realGamePass {
+  background: rgb(189, 189, 189);
+  padding: 4px;
+  border: 6px solid rgb(151, 151, 151);
+  margin: 4px;
+}
 
-
-
-
-.realGamePass{background: rgb(189, 189, 189);padding: 4px;border: 6px solid rgb(151, 151, 151);margin: 4px;}
-
-
-.test{width: 50px;height: 50px;background-color: black;}
+.test {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
