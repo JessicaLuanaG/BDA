@@ -53,9 +53,9 @@
 
 //  $(".findTheRightSquare").click( function() {
 
-//    var index = $(".findTheRightSquare").index(this) //obter o indice do quadrado
-//    var row = Math.floor(index / cols)
-//    var col = index % cols
+  //  var index = $(".findTheRightSquare").index(this) //obter o indice do quadrado
+  //  var row = Math.floor(index / cols)
+  //  var col = index % cols
 
 // definir imagem dependendo do valor da CELULA
 //    let cellValue = board[row][col]
