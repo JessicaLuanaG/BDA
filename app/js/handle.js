@@ -53,7 +53,7 @@ $(document).ready(() => {
 
       // Adiciona a célula ao tabuleiro com dados sobre o valor
       $("#euamojessica").append(
-        `<img class='findTheRightSquare' data-type='${cellValue}' src='${imgSrc}' alt='covered' 
+        `<img id='checkCel' class='findTheRightSquare' data-type='${cellValue}' src='${imgSrc}' alt='covered' 
         data-revealed='false'>`
       );
     }
