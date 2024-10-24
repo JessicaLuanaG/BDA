@@ -2,12 +2,15 @@ $(document).ready(() => {
     function calculateClock() {
         let time = 0;
         let interval;
+        let isRunning = false; // Variável para verificar se o cronômetro está em execução
 
         let imagePath = "../app/img/time";
         let digitElements = [$("#grado01"), $("#grado02"), $("#grado03")];
 
         // Função para iniciar o cronômetro
         function startTimer() {
+            if (isRunning) return; // Se já estiver em execução, não faz nada
+            isRunning = true; // Marca que o cronômetro está em execução
             clearInterval(interval); // Limpa qualquer intervalo anterior
             time = 0; // Reseta o tempo
             interval = setInterval(updateTimer, 1000); // Inicia o cronômetro, atualizando a cada 1 segundo
@@ -37,11 +40,9 @@ $(document).ready(() => {
             digitElements[2].attr('src', `${imagePath}0${digit3}.png`); // Unidade de segundos
         }
 
-        // Inicia o cronômetro quando o elemento #checkCel é clicado
+        // Inicia o cronômetro quando o elemento .findTheRightSquare é clicado
         $(".findTheRightSquare").click(function() {
-
-            startTimer(); // Inicia o cronômetro
-
+            startTimer(); // Inicia o cronômetro se não estiver em execução
         });
     }
 
