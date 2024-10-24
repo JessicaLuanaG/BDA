@@ -37,8 +37,12 @@ $(document).ready(() => {
             digitElements[2].attr('src', `${imagePath}0${digit3}.png`); // Unidade de segundos
         }
 
-        // Inicia o cronômetro automaticamente ao carregar a página
-        startTimer();
+        // Inicia o cronômetro quando o elemento #checkCel é clicado
+        $(".findTheRightSquare").click(function() {
+
+            startTimer(); // Inicia o cronômetro
+
+        });
     }
 
     calculateClock();
