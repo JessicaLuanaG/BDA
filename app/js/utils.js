@@ -46,5 +46,6 @@ $(document).ready(() => {
         });
     }
 
-    calculateClock();
+
+    calculateClock()
 });
